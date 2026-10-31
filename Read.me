@@ -1,0 +1,37 @@
+House Price Prediction App 
+
+Hey! This is my project for the Week 5 lab. It's a machine learning web app built with Python and Streamlit. It uses a Random Forest Regression model to predict the median value of a house based on the Boston Housing dataset.
+
+Files in this Project
+
+BostonHousingData.csv: The dataset used to train the model.
+
+train_model.py: The script that pre-processes the data and trains the machine learning model.
+
+app.py: The main Streamlit web application.
+
+requirements.txt: The list of Python libraries needed to run the app.
+
+Quick Setup
+
+Before running anything, make sure you have the required libraries installed. Open your terminal in this folder and run:
+
+pip install pandas scikit-learn joblib streamlit
+
+
+(Or just run pip install -r requirements.txt if you are using the text file!)
+
+How to Run the Project
+
+This project has two steps: first you train the model, and then you run the web app.
+
+Step 1: Train the model
+Run the training script in your terminal. This will clean the dataset, train the Random Forest model, and save it as a house_price_model.pkl file so the app can use it.
+
+python train_model.py
+
+
+Step 2: Start the Streamlit App
+Once the .pkl file is generated, you can start the Streamlit web interface by running:
+
+streamlit run app.py
